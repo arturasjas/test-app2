@@ -26,3 +26,19 @@ test(
     await expect(page.locator('ul li:last-child .list-item-date')).toHaveText(date.toDateString());
   },
 );
+
+
+test(
+  'item should be marked as done',
+  async ({
+    page,
+  }) => {
+    await page.goto(pagePath);
+
+    await expect(page.locator('ul li:last-child')).toBeVisible();
+
+    await page.locator('ul li:last-child').click();
+
+    await expect(page.locator('ul li:last-child')).toHaveClass('done');
+  },
+);
