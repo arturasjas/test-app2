@@ -59,9 +59,9 @@ test(
 
     await page.locator('input').fill(value);
 
-    await expect(page.getByRole('button')).toBeVisible();
+    await expect(page.locator('button')).toBeVisible();
 
-    await page.getByRole('button').click();
+    await page.locator('button').click();
 
     await expect(page.locator('ul li:last-child')).toHaveText(value);
   },
