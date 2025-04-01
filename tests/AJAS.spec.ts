@@ -20,7 +20,7 @@ test(
   }) => {
     await page.goto(pagePath);
 
-    await expect(page.locator('input')).toBeTruthy()  },
+    await expect(page.locator('input')).toBeVisible()  },
 );
 
 test(
@@ -33,3 +33,4 @@ test(
     await expect(page.getByRole('button') ).toHaveText('ADD ITEM')  
   },
 );
+
