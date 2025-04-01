@@ -46,7 +46,7 @@ export default defineConfig({
     : [
         { name: 'GoogleChrome', use: {
           launchOptions: {
-              executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+              executablePath: 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe',
           },
         } },
         // { name: 'GoogleChrome', use: { ...devices['Desktop Chrome'] } },
