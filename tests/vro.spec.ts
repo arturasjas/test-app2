@@ -47,7 +47,7 @@ const pagePath = 'http://localhost:4200';
 // );
 
 test(
-  'added item should be visible',
+  'added item should be visible at the end of the list',
   async ({
     page,
   }) => {
