@@ -1,6 +1,5 @@
 import { test, expect } from '@playwright/test';
 
-
 const pagePath = 'http://localhost:4200';
 
 test(

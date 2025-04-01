@@ -9,6 +9,8 @@ const baseUrl = 'http://localhost:4200';
 /**
 * See https://playwright.dev/docs/test-configuration.
 */
+
+console.log(777, devices);
 export default defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
@@ -46,6 +48,7 @@ export default defineConfig({
     : [
         { name: 'GoogleChrome', use: {
           launchOptions: {
+              // executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
               executablePath: 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe',
           },
         } },
