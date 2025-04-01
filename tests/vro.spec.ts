@@ -63,6 +63,6 @@ test(
 
     await page.getByRole('button').click();
 
-    await expect(page.locator('li')).toHaveText(value);
+    await expect(page.locator('ul li:last-child')).toHaveText(value);
   },
 );
