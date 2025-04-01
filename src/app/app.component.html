@@ -1,7 +1,13 @@
 <main>
-  <input />
-  <button>ADD ITEM</button>
+  <input [(ngModel)]="inputValue" />
+  <button (click)="addItem()">ADD ITEM</button>
   <ul>
-    <li>some random text</li>
+    <li (click)="markAsDone()" [ngClass]="{ done: this.itemDone }"></li>
+    @for (item of items; track $index) {
+    <li>
+      <span class="list-item-value">{{ item.value }}</span>
+      <span class="list-item-date">{{ item.date }}</span>
+    </li>
+    }
   </ul>
 </main>
