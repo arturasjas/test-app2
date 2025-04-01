@@ -10,7 +10,6 @@ const baseUrl = 'http://localhost:4200';
 * See https://playwright.dev/docs/test-configuration.
 */
 
-console.log(777, devices);
 export default defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
