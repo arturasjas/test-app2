@@ -19,6 +19,10 @@ test(
 
     await page.locator('button').click();
 
-    await expect(page.locator('ul li:last-child')).toHaveText(value);
+    const date = new Date();
+
+    await expect(page.locator('ul li:last-child .list-item-value')).toHaveText(value);
+
+    await expect(page.locator('ul li:last-child .list-item-date')).toHaveText(date.toDateString());
   },
 );
